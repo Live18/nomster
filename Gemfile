@@ -19,6 +19,7 @@ gem 'rb-readline'
 gem 'bootstrap', '~> 4.3.1'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'jquery-rails'
+gem 'simple_form'
 
 
 # Use CoffeeScript for .coffee assets and views
