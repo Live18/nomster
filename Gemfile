@@ -22,6 +22,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 
 
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -72,3 +73,4 @@ gem 'popper_js', '~> 1.14.5'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+gem 'font-awesome-rails'
