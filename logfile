@@ -1,0 +1,15 @@
+2019-09-10 08:45:46.934 PDT [4293] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-10 08:45:46.934 PDT [4293] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-10 08:45:46.934 PDT [4293] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-09-10 08:45:46.946 PDT [4294] LOG:  database system was shut down at 2019-09-10 08:45:25 PDT
+2019-09-10 08:45:46.950 PDT [4293] LOG:  database system is ready to accept connections
+2019-09-10 08:46:06.248 PDT [4305] FATAL:  database "billwagner" does not exist
+2019-09-10 08:47:20.646 PDT [4369] FATAL:  role "postgres" does not exist
+2019-09-10 08:47:20.650 PDT [4370] FATAL:  role "postgres" does not exist
+2019-09-10 08:50:49.663 PDT [4430] FATAL:  database "billwagner" does not exist
+2019-09-10 08:52:30.812 PDT [4452] FATAL:  database "billwagner" does not exist
+2019-09-10 08:52:41.802 PDT [4456] FATAL:  database "billwagner" does not exist
+2019-09-10 08:52:55.552 PDT [4459] FATAL:  role "postgres" does not exist
+2019-09-10 08:52:55.555 PDT [4460] FATAL:  role "postgres" does not exist
+2019-09-10 08:55:59.702 PDT [4500] FATAL:  database "billwagner" does not exist
+2019-09-10 08:56:38.978 PDT [4524] FATAL:  database "nomster_development" does not exist
