@@ -13,3 +13,7 @@
 2019-09-10 08:52:55.555 PDT [4460] FATAL:  role "postgres" does not exist
 2019-09-10 08:55:59.702 PDT [4500] FATAL:  database "billwagner" does not exist
 2019-09-10 08:56:38.978 PDT [4524] FATAL:  database "nomster_development" does not exist
+2019-09-10 16:31:41.788 PDT [4293] LOG:  received smart shutdown request
+2019-09-10 16:31:41.789 PDT [4293] LOG:  background worker "logical replication launcher" (PID 4300) exited with exit code 1
+2019-09-10 16:31:41.791 PDT [4295] LOG:  shutting down
+2019-09-10 16:31:41.799 PDT [4293] LOG:  database system is shut down
