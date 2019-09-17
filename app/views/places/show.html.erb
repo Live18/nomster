@@ -19,6 +19,10 @@
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
     Add your comment here
   </button>
+  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+    Add your picture here
+  </button>
+
 </div>
 
 <div class="clear"></div>
@@ -37,7 +41,7 @@
         <%=simple_form_for @comment, url: place_comments_path(@place) do |f| %>
         <%= f.input :message %>
         <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-      </div>
+     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <%= f.submit 'Save your comment.', class: 'btn btn-outline-primary' %>
@@ -46,16 +50,47 @@
     </div>
   </div>
 </div>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Add a picture and caption</h4>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+          <%= f.input :caption %>
+          <%= f.input :picture %>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit 'Save your picture.', class: 'btn btn-outline-primary' %>
+        </div>
+        <% end %>
+    </div>
+  </div>
+</div>
+
 <div class="row">
   <% @place.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
       <blockquote>
         <% if comment.humanized_rating.present? %>
-        <b><%= comment.humanized_rating %></b>
+        <b><%= comment.humanized_rating %></b> -
         <% end %>
         <%= comment.message %>
         <small><%= comment.user.email %></small>
       </blockquote>
     </div>
-    <% end %>
-  </div>
+  <% end %>
+</div>
+
+<div class="row">
+  <% @place.photos.each do |photo| %>
+    <div class="col-12 col-sm-6">
+      <%= photo.caption %>
+      <%= image_tag(place_photos_path(@place)) %>
+    </div>
+  <% end %>
+</div>
+
+
