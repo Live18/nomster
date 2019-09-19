@@ -18,11 +18,11 @@
 
       <div class="colapse navbar-colapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-          <li class="nav-item btn btn-outline-primary">
+          <li class="nav-item btn btn-warning">
             <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
             <%= link_to 'Home', root_path, class: 'nav-link' %>
           </li>
-          <li class="nav-item btn btn-outline-primary btn-lg">
+          <li class="nav-item btn btn-warning btn-lg">
             <%= link_to new_place_path, class: 'nav-link' do %>
             <i class="fa fa-plus-circle"></i>
             Add New Place
@@ -31,15 +31,15 @@
         </ul>
         <ul class='navbar-nav'>
           <% if user_signed_in? %>
-            <li class="nav-item btn btn-outline-primary">
+            <li class="nav-item btn btn-warning">
               <%= link_to 'Sign out!', destroy_user_session_path, method: :delete, class: 'nav-link' %>
           </li>
           
           <% else %>
-            <li class='nav-item btn btn-outline-primary'>
+            <li class='nav-item btn btn-warning'>
               <%= link_to 'Sign in', new_user_session_path, class: 'nav-link' %>
             </li>
-            <li class="nav-item btn btn-outline-primary">
+            <li class="nav-item btn btn-warning">
             <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
           </li>
           <% end %>
