@@ -31,9 +31,12 @@
         </ul>
         <ul class='navbar-nav'>
           <% if user_signed_in? %>
+            <li class='nav-item btn btn-warning'>
+              <%= link_to 'My Profile', user_path(current_user), class: "nav-link" %>
+            </li>
             <li class="nav-item btn btn-warning">
               <%= link_to 'Sign out!', destroy_user_session_path, method: :delete, class: 'nav-link' %>
-          </li>
+            </li>
           
           <% else %>
             <li class='nav-item btn btn-warning'>
